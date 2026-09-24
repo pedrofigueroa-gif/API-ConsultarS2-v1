@@ -67,3 +67,7 @@ python -m pytest -q
 ```
 
 Las pruebas HTTP y de SQL usan dobles locales. La conexión real a `db-mega-reporte` se comprueba al configurar credenciales y ejecutar el endpoint en el entorno de destino.
+
+## Cloud Run
+
+El proyecto incluye `Dockerfile` y `.dockerignore`. Las variables, secretos y requisitos de red están en [docs/CLOUD_RUN.md](docs/CLOUD_RUN.md). El archivo `.env` local queda fuera del repositorio y de la imagen.
